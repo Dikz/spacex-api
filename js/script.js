@@ -27,7 +27,7 @@ const cardLaunch = data => data.map(launch => `
 `)
 
 const cardUpcoming = data => data.map(launch => `
-	<div class="media mb-4 ml-5 m-4">
+	<div class="media mb-4 ml-5 m-4 text-light">
 		<div class="media-body">
 			<h5 class="mt-0 mb-1">${launch.mission_name}</h5>
 			${launch.details ? launch.details.substring(0, 40) : 'No details yet'}...

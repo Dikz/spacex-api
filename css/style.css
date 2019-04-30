@@ -1,8 +1,14 @@
+body {
+	background: url("../src/img/rockets-back-edit.jpg") no-repeat fixed top;
+	background-size: cover;
+}
+
 .list-unstyled {
   height: 400px;
 	overflow-y: scroll;
 	border-left: 6px solid rgb(192, 255, 198);
 	box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+	background: rgba(248, 248, 248, 0.2);
 }
 
 ::-webkit-scrollbar-track {
@@ -24,6 +30,7 @@
 
 .list-launches::before {
 	content: "Launches";
+	color: #fff;
 	font-weight: bold;
 	font-size: 1.5em;
 	padding: 0 8px 0 8px;
@@ -51,10 +58,12 @@
 	overflow-y: scroll;
 	border-left: 6px solid rgb(192, 255, 198);
 	box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+	background: rgba(248, 248, 248, 0.2);
 }
 
 .list-upcoming::before {
 	content: "Upcoming";
+	color: #fff;
 	font-weight: bold;
 	font-size: 1.5em;
 	padding: 0 8px 0 8px;
