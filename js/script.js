@@ -19,7 +19,8 @@ const cardLaunch = data => data.map(launch => `
 			<h5 class="mt-0 mb-1">${launch.mission_name}</h5>
 			${launch.details ? launch.details.substring(0, 40) : ''}...
 			<div>
-				<p class="badge badge-info">${launch.launch_year}</p>
+				<p><span class="badge badge-danger">Rocket: ${launch.rocket.rocket_name}</span></p>
+				<p class="badge badge-info">Year: ${launch.launch_year}</p>
 			</div>
 		</div>
 	</li>
