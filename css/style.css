@@ -4,7 +4,7 @@ body {
 }
 
 .list-unstyled {
-  height: 400px;
+  height: 460px;
 	overflow-y: scroll;
 	border-left: 6px solid rgb(192, 255, 198);
 	box-shadow: 0 0 12px rgba(0, 0, 0, .1);
@@ -51,10 +51,17 @@ body {
 	cursor: pointer;
 }
 
+.links i {
+	color: rgba(87, 22, 76, 0.839);
+}
+
+.links i:hover {
+	color: rgba(87, 22, 76, 0.6);
+}
 
 /* UPCOMING */
 #upcoming {
-	height: 400px;
+	height: 460px;
 	overflow-y: scroll;
 	border-left: 6px solid rgb(192, 255, 198);
 	box-shadow: 0 0 12px rgba(0, 0, 0, .1);

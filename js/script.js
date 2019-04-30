@@ -20,6 +20,11 @@ const cardLaunch = data => data.map(launch => `
 			${launch.details ? launch.details.substring(0, 40) : ''}...
 			<div>
 				<p><span class="badge badge-danger">Rocket: ${launch.rocket.rocket_name}</span></p>
+				<div class="links mt-2 mb-2">
+					<a class="ml-2 mr-2" target="_blank" href="${launch.links.article_link ? launch.links.article_link : '#'}"><i class="fas fa-link fa-2x"></i></a>
+					<a class="ml-2 mr-2" target="_blank" href="${launch.links.video_link ? launch.links.video_link : '#'}"><i class="fab fa-youtube fa-2x"></i></a>
+					<a class="ml-2 mr-2" target="_blank" href="${launch.links.wikipedia ? launch.links.wikipedia : '#'}"><i class="fab fa-wikipedia-w fa-2x"></i></a>
+				</div>
 				<p class="badge badge-info">Year: ${launch.launch_year}</p>
 			</div>
 		</div>
