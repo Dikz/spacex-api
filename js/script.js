@@ -1,8 +1,10 @@
 $(async () => {
 	const launches = await fetch("https://api.spacexdata.com/v3/launches/").then(r => r.json())
+	launchesDone = launches.filter(launch => launch.upcoming == false).reverse()
 
-	$("#launches").append(cardLaunch(launches))
-	removeLoading('#loading')
+	$("#launches").append(cardLaunch(launchesDone))
+	$("#loading").hide()
+	$(".list-launches").show()
 })
 
 const cardLaunch = data => data.map(launch => `
@@ -17,7 +19,3 @@ const cardLaunch = data => data.map(launch => `
 		</div>
 	</li>
 `)
-
-const removeLoading = (selector) => {
-	$(selector).hide()
-}
